@@ -1,4 +1,5 @@
 from data_analysis import get_sentences, get_count_of_sentences, get_count_of_words, write_to_file_result
+
 def main():
     sentences_list = get_sentences("text.txt")
     sentences_count = get_count_of_sentences(sentences_list)

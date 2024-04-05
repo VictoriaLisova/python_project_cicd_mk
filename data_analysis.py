@@ -36,7 +36,7 @@ def get_count_of_words(sentences: list) -> int:
     return words_count
 
 
-def write_to_file_result(words_count: str, sentences_count: str, file_name: str) -> str:
+def write_to_file_result(words_count: int, sentences_count: int, file_name: str) -> str:
     """
     write results about count of sentences and words into file
     :param words_count: count of words
