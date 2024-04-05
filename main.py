@@ -1,16 +1,12 @@
-# This is a sample Python script.
+from data_analysis import get_sentences, get_count_of_sentences, get_count_of_words, write_to_file_result
+def main():
+    sentences_list = get_sentences("text.txt")
+    sentences_count = get_count_of_sentences(sentences_list)
+    print(sentences_count)
+    words_count = get_count_of_words(sentences_list)
+    print(words_count)
+    write_to_file_result(words_count, sentences_count, "result.txt")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
